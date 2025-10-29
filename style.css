@@ -1,0 +1,54 @@
+/* Animated Gradient Background */
+body {
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #00c6ff, #0072ff);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* General Text */
+header h1 {
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Card Styling */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Buttons */
+.btn-success {
+  background: linear-gradient(45deg, #28a745, #34d058);
+  border: none;
+  transition: transform 0.2s;
+}
+.btn-success:hover {
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background: linear-gradient(45deg, #dc3545, #ff4d4d);
+  border: none;
+}
+.btn-danger:hover {
+  transform: scale(1.05);
+}
+
+/* Table Enhancements */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 114, 255, 0.1);
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
